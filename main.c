@@ -30,17 +30,17 @@ void displayoutput(struct students *s1)
 }
 int main()
 {
-    struct students s[10];
+    struct students s1[SIZE];
     int no,i;
     printf("Enter the number of students:\n");
     scanf("%d",&no);
     for(i=0;i<no;i++)
     {
-        acceptinput(&s[i]);
+        acceptinput(&s1[i]);
     }
      for(i=0;i<no;i++)
      {
-        displayoutput(&s[i]);
+        displayoutput(&s1[i]);
      }
      return 0;
 }
